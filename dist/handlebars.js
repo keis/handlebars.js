@@ -1,3 +1,6 @@
+//Wrapped in an outer function to preserve global this
+(function (root) { var amdExports; define([], function () { (function () {
+
 /*
 
 Copyright (C) 2011 by Yehuda Katz
@@ -2237,3 +2240,10 @@ Handlebars.template = Handlebars.VM.template;
 // lib/handlebars/browser-suffix.js
 })(Handlebars);
 ;
+
+
+amdExports = Handlebars;
+
+}.call(root));
+    return amdExports;
+}); }(this));
