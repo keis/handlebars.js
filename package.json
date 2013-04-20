@@ -24,7 +24,7 @@
     "mocha": "*",
     "mustache": "~0.7.2"
   },
-  "main": "lib/handlebars.js",
+  "main": "dist/handlebars.js",
   "bin": {
     "handlebars": "bin/handlebars"
   },
